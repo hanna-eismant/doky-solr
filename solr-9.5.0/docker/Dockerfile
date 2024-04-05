@@ -21,7 +21,7 @@
 #   Example:
 #     ./gradlew dockerBuild
 #
-# For most Solr users, using this Dockerfile is not recommended: pre-built docker images of Solr are 
+# For most Solr users, using this Dockerfile is not recommended: pre-built docker images of Solr are
 # available at https://hub.docker.com/_/solr -- however this file can be used to build docker images from
 # a Solr release artifact -- either from a remote TGZ file, or from an TGZ artifact you have downloaded
 # locally.
@@ -73,6 +73,12 @@ RUN set -ex; \
 RUN set -ex; \
   (cd /opt; ln -s solr-*/ solr); \
   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile;
+
+RUN cd /opt; \
+    ls -la;
+
+RUN cd /opt/solr; \
+    ls -la;
 
 RUN set -ex; \
   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d; \
