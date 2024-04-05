@@ -5,7 +5,7 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.time.temporal.TemporalAdjusters
 
-var deploymentKey = "azure-dev-front"
+var deploymentKey = "azure-dev-solr"
 
 job("Schedule deployment") {
 //    startOn {
