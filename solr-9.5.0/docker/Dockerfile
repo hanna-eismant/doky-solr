@@ -74,12 +74,6 @@ RUN set -ex; \
   (cd /opt; ln -s solr-*/ solr); \
   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile;
 
-RUN cd /opt; \
-    ls -la;
-
-RUN cd /opt/solr; \
-    ls -la;
-
 RUN set -ex; \
   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d; \
   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh; \
