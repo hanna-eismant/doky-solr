@@ -21,7 +21,7 @@
 #   Example:
 #     ./gradlew dockerBuild
 #
-# For most Solr users, using this Dockerfile is not recommended: pre-built docker images of Solr are 
+# For most Solr users, using this Dockerfile is not recommended: pre-built docker images of Solr are
 # available at https://hub.docker.com/_/solr -- however this file can be used to build docker images from
 # a Solr release artifact -- either from a remote TGZ file, or from an TGZ artifact you have downloaded
 # locally.
